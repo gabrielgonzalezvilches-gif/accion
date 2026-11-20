@@ -1,0 +1,73 @@
+﻿¡Acción! 1.9.3 — el instalador animado
+======================================
+
+QUÉ HACER
+1. Copia el contenido de este paquete en la carpeta del programa
+   (D:\experimentos con ia\software guion), reemplazando los archivos.
+   Ojo: la carpeta «estilos_instalador» trae una carpeta nueva,
+   «animacion», y un archivo nuevo, «animaciones.iss». Cópiala entera.
+2. Doble clic en compilar_instalador.bat para armar los instaladores 1.9.3.
+   Hace falta Inno Setup 6.7 o más nuevo (el mismo que ya usas para los
+   fondos).
+
+
+🎞 LOS FONDOS DEL INSTALADOR SE MUEVEN
+Como un flipbook: cada fondo tiene partes que van cambiando de cuadro diez
+veces por segundo.
+• Bienvenida: la claqueta se cierra («¡clac!») cada pocos segundos y se
+  vuelve a abrir.
+• Acto 1, La pizarra: el brazo de la pizarra se abre y golpea, y
+  «Copiando…» va sumando puntos.
+• Acto 2, El guion: el texto se escribe a máquina, línea por línea, con el
+  cursor; al final, el cursor parpadea.
+• Acto 3, El estreno: las ampolletas de la marquesina (y las de arriba a
+  la derecha) corren alrededor del letrero.
+• Acto 4, El rollo de 35 mm: la cuenta regresiva 5‑4‑3‑2‑1 con su aguja,
+  y el cuadro iluminado avanza por la tira de película.
+• Acto 5, La cinta: giran los carretes del casete y parpadea el REC.
+• Acto 6, Los 8 bits: «¡ACCIÓN!» ondula, «★ NIVEL FINAL ★» parpadea y el
+  saludo pasa en scroll.
+• Final, ¡Corten!: la claqueta se abre y se cierra («¡clac!»).
+Las páginas de adentro (licencia, carpeta, tareas) quedan como antes.
+
+Cosas que conviene saber:
+• Cada acto dura lo que tarda su parte de la barra: en un computador
+  rápido, uno o dos segundos. La bienvenida y el final se mueven todo lo
+  que la persona se quede en ellos.
+• Lo que se mueve nunca queda debajo de los textos, de la barra ni de los
+  botones del instalador.
+• Funciona en pantallas al 100 % y con escala (125 %, 150 %, 200 %): hay
+  cuadros en dos tamaños.
+• Cuando ¡Acción! se actualiza solo (en silencio, con la barra a la vista),
+  también se ven los actos animados.
+• Si falta la carpeta «animacion», o algo fallara al cargar los cuadros,
+  el instalador sale igual, con los fondos fijos.
+• El instalador pesa unos 4 MB más.
+• No usa programas ni complementos de otros: es Inno Setup solo. Los
+  dibujos son los mismos de los fondos, con las mismas tipografías de
+  licencia libre (solo van las imágenes ya dibujadas).
+• Los archivos que usa solo el asistente (fondos, cuadros y música) ahora
+  van primero en el instalador, como recomienda Inno Setup.
+
+
+PROBADO
+• Con el Inno Setup 6.7.1 real, corriendo en un emulador de Windows
+  (Wine): compila con las animaciones, sin la carpeta «animacion» (fondos
+  fijos) y sin «estilos_instalador» (el aspecto de siempre).
+• El instalador animado, de punta a punta: la bienvenida, los seis actos,
+  el final al 100 % y al 150 % de escala; cancelar a mitad de la
+  instalación; «Finalizar»; y las instalaciones en silencio (/SILENT y
+  /VERYSILENT). Siempre termina limpio, sin errores.
+• Una prueba automática nueva:
+  - que cada capa queda dentro de su zona y lejos de los controles;
+  - que sus cuadros existen en los dos tamaños, con la medida justa;
+  - que las líneas del guion van juntas;
+  - que el cuadro de reposo es igual al fondo fijo;
+  - que el instalador las incluye bien.
+• Pasa la batería completa de pruebas.
+• Aparte: un video corto del instalador animado, grabado en el emulador
+  (v193_instalador_animado.mp4). En la grabación cada acto dura 2,6
+  segundos para que se vean todos; en el real, siguen a la barra.
+
+Hay que probarlo en tu PC con Windows de verdad: en el emulador se vio
+bien, pero Windows dibuja las ventanas por su cuenta.
